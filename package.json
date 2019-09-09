@@ -1,0 +1,30 @@
+{
+  "name": "node_crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "postinstall": "node ./bin/postinstall",
+    "start": "node ./bin/V4Shop",
+    "dev": "set DEBUG=ss:* && nodemon ./bin/V4Shop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skarmani2002/node_crud.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skarmani2002/node_crud/issues"
+  },
+  "homepage": "https://github.com/skarmani2002/node_crud#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "underscore": "^1.9.1"
+  }
+}
