@@ -1,0 +1,15 @@
+.DS_Store
+node_modules
+.env
+playground.js
+*.log
+.nyc_output
+coverage
+*.sqlite
+db/*.sql
+/.idea
+package-lock.json
+/nbproject
+storage
+
+logs

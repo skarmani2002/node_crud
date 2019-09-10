@@ -5,13 +5,21 @@ const express = require('express');
 const path = require('path');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
-
+var firebase = require('firebase');
+var firebaseapp = firebase.initializeApp({
+    apiKey: 'AIzaSyDwfKjvlQ_73zg9Xi7hCmzbzrvuRouiRP8',
+    authDomain: 'theumerkot.firebaseapp.com',
+    databaseURL: 'https://theumerkot.firebaseio.com',
+    projectId: 'theumerkot',
+    storageBucket: '',
+    messagingSenderId: '1054848318856'
+  });
+  
 //requiring global module so they will be available all-across the application
 global.errors = require('./errors/response-errors');
+global.firebaseapp = firebaseapp;
 
 const app = express();
-const UserController = require('./controllers/UserController');
-const user_controller = new UserController();
 app.use(express.static(path.join(__dirname, 'public')));
 
 
